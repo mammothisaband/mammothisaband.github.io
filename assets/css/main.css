@@ -1633,6 +1633,35 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		/*Supposed to fix the problem where the logo flickers for a brief second before animating in.
+		At the moment, it seems that nothing happens when used
+
+		@keyframes slow_to_load{
+			from{visibility:hidden;}
+			to{visibility:visible;}
+		}
+		.slow.load {
+			animation-name: slow_to_load;
+			animation-duration: 5s;
+			animation-delay: 1s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in;
+		}
+
+		**********************************************************/
+		
+		@keyframes fade_in{
+			from{opacity:0;}
+			to{opacity:1;}
+		}
+		.main.logo {
+			animation-name: fade_in;
+			animation-duration: 5s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in;
+		}
+
+
 /* Button */
 
 	input[type="button"],
