@@ -2397,6 +2397,7 @@ ul.icons {
 ul.dates {
 	list-style: none;
 	padding-left: 0;
+	/*padding-bottom:2em;*/
 }
 
 	ul.dates li {
@@ -2948,6 +2949,7 @@ ul.dates {
 			h2, h3, h4, h5, h6 {
 				font-size: 1.2em;
 				letter-spacing: 0.05em;
+				padding-bottom: 2em;
 				margin: 0 0 1em 0;
 			}
 
