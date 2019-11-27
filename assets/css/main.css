@@ -132,6 +132,10 @@ input, select, textarea {
 	.hidden {
 		display: none;
 	}
+	
+	.invisible {
+		visibility: hidden;
+	}
 
 	a.orange {
 		text-decoration-color: #f89442;
